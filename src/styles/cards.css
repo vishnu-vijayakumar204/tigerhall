@@ -1,0 +1,168 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.company-logo {
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  background-color: #2d3748;
+  color: #ffffff;
+  border-color: #4a5568;
+}
+
+.content-cards-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.library-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #f4f3f0;
+  font-family: "PP Neue Montreal";
+}
+
+@media (max-width: 768px) {
+  .library-title {
+    text-align: center;
+  }
+}
+
+.card-container {
+  border-width: 1px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #2d3748;
+  border-color: #4a5568;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 24rem;
+}
+
+.image-container {
+  flex: 0 1 60%;
+  position: relative;
+}
+
+.card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  font-size: 12px;
+  color: #1a202c;
+  font-weight: 700;
+  padding: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0;
+}
+
+.icon-bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+.icon-bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+.card-details {
+  flex: 1;
+  background-color: #ffffff;
+  color: black;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-category {
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "PP Neue Montreal";
+}
+
+.card-name {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  font-size: 16px;
+  font-family: "PP Neue Montreal";
+}
+
+.card-experts {
+  color: #2d3748;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "PP Neue Montreal";
+}
+
+.card-companies {
+  color: #4a5568;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "PP Neue Montreal";
+}
+
+.fetching-more {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #1a202c;
+  border-radius: 0.375rem;
+}
+
+.spinner {
+  margin-right: 0.5rem;
+}
+
+.fetching-text {
+  color: #ffffff;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  color: #ffffff;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.icons-container img {
+  margin-left: 8px;
+}
